@@ -1,3 +1,39 @@
+/* Ajout de selecteur */
+.insert {
+    color: #575757 !important;
+    margin: 20px auto 20px auto;
+    width : 65%;
+    font-size: 22px;
+    text-align: center;
+}
+
+.link-partner {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.red-title {
+    color: #8a3131 !important;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.bloc-title-contact {
+    background-color: #8a3131 !important;
+}
+
+blockquote{
+    line-height: 30px;
+}
+
+cite {
+    font-weight: 700;
+}
+/* Fin ajout de selecteurs */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -285,6 +321,7 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 32px;
+    line-height: 50px;
 }
 
 .navbar {
@@ -325,16 +362,26 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 22px;
 }
+
+
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
 
-.nav > li a:hover,
+.nav > li a:hover {
+    background: #8a3131;
+    color: #FFF !important;
+    box-shadow: 1.5px -3.5px 12.5px -1.5px #575757;
+    border-radius: 3px;
+}
+
 .nav > li a:focus {
     background: transparent;
+    
+    color: #000000 !important;
 }
 
 .navbar-toggle {
@@ -506,8 +553,9 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(0, 0, 0);
     box-shadow: none;
+    border: 2px solid ;
 }
 
 .scrollToTop {
@@ -648,10 +696,11 @@ h6,
 p,
 label,
 .btn,
-a {
+a,
+blockquote {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #202020!important;
 }
 
 .container {
@@ -677,7 +726,8 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .tight-width-whitespace {
@@ -707,6 +757,7 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    text-align: center;
 }
 
 h3 {
@@ -771,21 +822,22 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #FFFF;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background:  #8a3131;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #c86030!important;
+    color: black!important;
+    border: solid 1px #FFF;
 }
 
 .ltc-white {
@@ -823,6 +875,11 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+.grey-background {
+    background-color: #2f2e2e;
+    padding: 40px;
 }
 
 @media (max-width: 1024px) {
